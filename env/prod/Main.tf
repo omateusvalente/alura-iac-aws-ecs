@@ -1,5 +1,10 @@
 module "Producao" {
-  source = "../../Infra"
+    source = "../../Infra"
+    
+    nome_repositorio = "producao"
+    ambiente = "prod"
+}
 
-  nome_repositorio = "producao"
+output "IP_alb" {
+    value = module.Producao.IP
 }

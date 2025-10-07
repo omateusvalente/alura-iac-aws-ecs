@@ -1,3 +1,7 @@
 variable "nome_repositorio" {
-    type = string
+  type = string
+}
+
+variable "ambiente" {
+  type = string
 }
